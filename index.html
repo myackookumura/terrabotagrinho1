@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Um bot que irá ajudar você a criar sua Aquaponia de um jeito seguro e fácil!">
+  <title>TerraBot - Aquaponia Projeto com IA</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header class="cabecalho">
+    <img class="cabecalho-imagem" src="data:image/png;base64,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" alt="Logo da comunidade TerraBot">
+    <nav class="cabecalho-menu">
+      <a class="cabecalho-menu-item">O que é Aquaponia?</a>
+      <a class="cabecalho-menu-item">Produção com IA</a>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <section class="conteudo-principal">
+      <div class="conteudo-principal-escrito">
+        <h1 class="conteudo-principal-escrito-titulo">Aquaponia</h1>
+        <h2 class="conteudo-principal-escrito-subtitulo">Montar seus projetos agora ficou muito mais fácil</h2>
+        <a href="https://myackookumura.github.io/IAAquaponia/"> 
+          <button class="conteudo-principal-escrito-botao">Faça sua Aquaponia aqui!</button>
+        </a>
+        
+      </div>
+      <img class="conteudo-principal-imagem" src="https://img.freepik.com/fotos-premium/mao-robotica-de-renderizacao-3d-ou-mao-ciborgue-com-display-grafico_493806-11054.jpg?w=900" alt="IA TerraBot">
+    </section>
+
+    <section class="conteudo-secundario">
+      <h3 class="conteudo-secundario-titulo">O que é Aquaponia?</h3>
+      <p class="conteudo-secundario-paragrafo">Aquaponia é um sistema de cultivo que combina a piscicultura (criação de peixes) com a hidroponia (cultivo de plantas sem solo). Em outras palavras, é um sistema fechado onde os dejetos dos peixes são filtrados e transformados em nutrientes para as plantas, que por sua vez, purificam a água para os peixes.
+
+      É uma técnica que se assemelha a um ecossistema natural, onde os resíduos de um organismo servem como alimento para outro, criando um ciclo fechado e sustentável.</p>
+    </section>
+
+    <section class="conteudo-terciario">
+      <h3 class="conteudo-terciario-titulo">Como funciona?</h3>
+      <p class="conteudo-terciario-paragrafo"> Funciona da seguinte maneira: 
+      <p class="conteudo-terciario-paragrafo">1. Criação de Peixes: Os peixes vivem em tanques e produzem resíduos, que contêm amônia.</p>
+      <p class="conteudo-terciario-paragrafo">2. Processo de Filtragem: Bactérias benéficas convertem a amônia em nitritos e, em seguida, em nitratos.</p>
+      <p class="conteudo-terciario-paragrafo">3. Crescimento das Plantas: As plantas absorvem os nitratos como nutrientes, purificando a água no processo.</p>
+      <p class="conteudo-terciario-paragrafo">4. Recirculação da Água: A água limpa retorna para os tanques de peixes, criando um ciclo contínuo.</p>
+
+    </section>
+
+    <section class="conteudo-quaternario">
+      <h3 class="conteudo-quaternario-titulo">Vantagens</h3>
+      <p class="conteudo-quaternario-paragrafo"> A aquaponia oferece diversas vantagens, tornando-a uma solução inovadora e sustentável para a produção de alimentos. Primeiro, ela economiza água ao recircular e reutilizar o líquido em um ciclo fechado, reduzindo significativamente o consumo comparado aos métodos tradicionais. Além disso, transforma os resíduos dos peixes em nutrientes para as plantas, eliminando a necessidade de fertilizantes químicos e minimizando o desperdício. Esse sistema integrado maximiza o uso do espaço e dos recursos, promovendo uma produção eficiente e ecológica. Com uma abordagem sustentável, a aquaponia também contribui para uma menor pegada ambiental e garante alimentos frescos e de alta qualidade.</p>
+  
+    </section>
+
+
+    <section class="conteudo-quinario">
+      <h3 class="conteudo-quinario-titulo">Aplicações e Usos</h3>
+      <p class="conteudo-quinario-paragrafo">Considerada uma tecnologia versátil com diversas aplicações, tanto para uso residencial quanto comercial. Em ambientes domésticos, sistemas aquapônicos compactos permitem o cultivo de hortaliças, ervas e peixes em espaços reduzidos, como varandas e jardins. Para projetos comerciais, a aquaponia oferece uma solução eficiente para a produção em larga escala de vegetais e peixes, ideal para mercados locais e restaurantes que buscam alimentos frescos e sustentáveis. Além disso, a técnica pode ser utilizada em centros de pesquisa e educação, demonstrando práticas agrícolas inovadoras e sustentáveis. Em todos esses contextos, a aquaponia destaca-se por sua capacidade de otimizar recursos e promover uma produção alimentar responsável e eficiente.
+      
+      </section>
+
+      <section class="conteudo-senario">
+        <h3 class="conteudo-senario-titulo">Desafios e Considerações</h3>
+        <p class="conteudo-senario-paragrafo">Embora a aquaponia ofereça muitas vantagens, também apresenta desafios e considerações importantes. A instalação e manutenção de um sistema aquapônico podem ser complexas e exigir um investimento inicial significativo. A configuração correta dos tanques de peixes, leitos de cultivo e sistemas de filtragem é crucial para o sucesso do sistema e pode demandar conhecimentos técnicos específicos.
+
+          Outro desafio é o monitoramento constante da qualidade da água. Manter o equilíbrio ideal de pH, níveis de oxigênio e nutrientes é essencial para garantir o bem-estar dos peixes e o crescimento saudável das plantas. Isso requer atenção regular e ajustes precisos, o que pode ser exigente para iniciantes.
+          
+          Além disso, a aquaponia pode ser sensível a variações no ambiente, como mudanças de temperatura e possíveis doenças. A necessidade de um controle cuidadoso desses fatores pode limitar a aplicabilidade em determinadas regiões ou para certos tipos de cultivos.
+          
+          Apesar desses desafios, muitas pessoas acham que os benefícios superam as dificuldades, especialmente quando se busca uma solução sustentável e eficiente para a produção de alimentos. Com planejamento adequado e comprometimento, a aquaponia pode oferecer uma alternativa inovadora e viável para a agricultura moderna.
+        </section>
+
+        <section class="conteudo-septnario">
+          <h3 class="conteudo-septnario-titulo">Mergulhe no mundo da aquaponia! 🐠🌱</h3>
+          <p class="conteudo-septnario-paragrafo">Pronto para dar o primeiro passo em direção à sua própria aquaponia?</p>
+          <p class="conteudo-septnario-paragrafo"> Aqui no TerraBot, você encontrou:</p>
+          <p class="conteudo-septnario-paragrafo"> Informação completa: Desvende os mistérios da aquaponia com nossos artigos detalhados, abrangendo desde os princípios básicos até técnicas avançadas.</p>
+          <p class="conteudo-septnario-paragrafo">Inspiração: Explore projetos incríveis de aquaponia, desde sistemas compactos para apartamentos até grandes projetos para produção comercial.</p>
+          <p class="conteudo-septnario-paragrafo"> Recursos: Descubra ferramentas e materiais para construir sua própria aquaponia, com dicas e sugestões para cada etapa do processo.</p>
+          <p class="conteudo-septnario-paragrafo">A aquaponia é mais do que um sistema de cultivo - é um estilo de vida!</p>
+            
+          <p class="conteudo-septnario-paragrafo">Junte-se a nós e embarque nesta jornada sustentável, onde a natureza e a tecnologia se unem para criar um futuro mais verde e saboroso.</p>    
+  
+
+          <section class="conteudo-octnario">
+            <h3 class="conteudo-octtnario-titulo"></h3>
+        </main>
+
+        <footer>
+          <p>&copy; 2024 - Todos os direitos reservados</p>
+          <nav>
+            <ul>
+              <li><a href="#">Site criado por Wanessa Vieira de Paula</a></li>
+            </ul>
+          </nav>
+        </footer>
+
+</body>
+  
+    </html>
