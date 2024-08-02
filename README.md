@@ -1,4 +1,5 @@
 TerraBot IA Agrinho: Cultivando o Futuro da Aquaponia
+
 O TerraBot IA Agrinho é um site dedicado a revolucionar a maneira como você aprende e pratica a aquaponia. Nossa plataforma, alimentada por inteligência artificial, oferece uma experiência única e personalizada para iniciantes e experientes na área.
 
 Aqui, você encontrará:
